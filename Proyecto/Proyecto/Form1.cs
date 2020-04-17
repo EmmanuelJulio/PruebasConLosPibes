@@ -16,5 +16,10 @@ namespace Proyecto
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = ClsDatos.GetDatos().GetAlldic();
+        }
     }
 }
